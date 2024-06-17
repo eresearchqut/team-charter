@@ -39,3 +39,24 @@ The unit tests for the components can be found in the `__tests__` directory.
 ### Storybook's Accessibility testing
 
 This starter kit comes with the `@storybook/addon-a11y` which is used to check for common accessibility errors in your components. When you run `yarn run storybook`, each story will show detailed explanations with suggested fixes if errors are found.
+
+
+### Updating the version
+
+Patch
+
+```shell
+ ./version.sh patch
+```
+
+Minor
+
+```shell
+./version.sh minor 
+```
+
+Major
+
+```shell
+./version.sh major
+```
