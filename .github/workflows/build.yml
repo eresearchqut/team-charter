@@ -7,7 +7,7 @@ jobs:
       - linux
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js 18.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
@@ -15,7 +15,7 @@ jobs:
       - name: Configure caching
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
           cache: yarn
       - name: Install Dependencies
         run: yarn install
