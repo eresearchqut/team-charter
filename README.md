@@ -1,9 +1,10 @@
-# nextjs-chakra-ui starter kit
+# eResearch team Charter
 
 ## Overview
 
-This Next.js starter kit comes with formatting, linting, example components, testing and styling. Here is the complete list of technologies and tooling used in this kit:
+TODO
 
+## Stack
 - [Next.js 13](https://nextjs.org/blog/next-13)
 - [Chakra UI](https://chakra-ui.com/)
 - [Jest](https://jestjs.io/) - Test runner
@@ -41,7 +42,7 @@ The unit tests for the components can be found in the `__tests__` directory.
 This starter kit comes with the `@storybook/addon-a11y` which is used to check for common accessibility errors in your components. When you run `yarn run storybook`, each story will show detailed explanations with suggested fixes if errors are found.
 
 
-### Updating the version
+### Tagging and updating the version
 
 Patch
 
