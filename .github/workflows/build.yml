@@ -11,10 +11,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.x
-      - run: corepack enable
       - name: Install Dependencies
         run: yarn install
-      - name: Build Packages and Apps
-        run: yarn build:ci
-      - name: Test Packages and Apps
-        run: yarn test:ci
+      - name: Build
+        run: yarn build
+      - name: Test
+        run: yarn test
