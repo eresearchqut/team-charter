@@ -1,4 +1,4 @@
-# eResearch team Charter
+# eResearch Team Charter
 
 ## Overview
 
