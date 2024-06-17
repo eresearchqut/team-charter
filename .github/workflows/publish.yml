@@ -16,7 +16,7 @@ env:
   GIT_ACC: myaccount
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
