@@ -7,7 +7,7 @@ describe("Home", () => {
     render(<Home />);
 
     const heading = screen.getByRole("heading", {
-      name: "NextJS and Chakra UI Starter Kit",
+      name: "eResearch Team Charter",
     });
 
     expect(heading).toBeInTheDocument();
