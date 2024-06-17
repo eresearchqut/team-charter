@@ -24,10 +24,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>NextJS and Chakra UI starter kit</title>
+        <title>eResearch Team Charter</title>
         <meta
           name="description"
-          content="This is a starter kit for NextJS and Chakra UI"
+          content="Our Team Charter"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -42,28 +42,8 @@ const Home: NextPage = () => {
             p={4}
             bg="#2464ec"
           >
-            NextJS and Chakra UI Starter Kit
+            eResearch Team Charter
           </Heading>
-        </Center>
-        <Center>
-          <UnorderedList mt={8} listStyleType="none">
-            <Flex
-              flexDirection="column"
-              justifyContent="center"
-              alignItems="center"
-            >
-              {routesArr.map(({ route, text }) => (
-                <ListItem
-                  key={route}
-                  fontSize="2xl"
-                  textDecoration="underline"
-                  color="#376fec"
-                >
-                  <Link href={route}>{text}</Link>
-                </ListItem>
-              ))}
-            </Flex>
-          </UnorderedList>
         </Center>
       </Box>
     </div>
