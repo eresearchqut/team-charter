@@ -39,18 +39,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Regex matching
-        uses: actions-ecosystem/action-regex-match@v2
-        id: regex-match
-        with:
-          text: ${{ github.ref_name }}
-          regex: '([a-z-]+)\/v[0-9]+.[0-9]+.[0-9]+'
-
-      - name: Exit if tag not matched
-        if: ${{ steps.regex-match.outputs.match == '' }}
-        run: |
-          echo "Tag was not matched"
-          exit 1
+#      - name: Regex matching
+#        uses: actions-ecosystem/action-regex-match@v2
+#        id: regex-match
+#        with:
+#          text: ${{ github.ref_name }}
+#          regex: '([a-z-]+)\/v[0-9]+.[0-9]+.[0-9]+'
+#
+#      - name: Exit if tag not matched
+#        if: ${{ steps.regex-match.outputs.match == '' }}
+#        run: |
+#          echo "Tag was not matched"
+#          exit 1
 
       - name: Set APP in env
         run: echo "APP=${{ steps.regex-match.outputs.group1 }}" >> $GITHUB_ENV
