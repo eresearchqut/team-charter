@@ -15,19 +15,16 @@ export const Primary: Story = {
     notes: [
       {
         message: "In my experience, there is no such thing as luck.",
-        fontSize: "x-large",
         transform: "rotate(-3deg)",
       },
       {
         message:
           "You will never find a more wretched hive of scum and villainy.",
-        fontSize: "large",
         transform: "rotate(5deg)",
         color: "blue",
       },
       {
         message: "That’s no moon. It's a space station.",
-        fontSize: "x-large",
       },
     ],
   },
