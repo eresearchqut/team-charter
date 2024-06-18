@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { StickyNotesBoard } from "./StickyNotesBoard";
-import { Primary as Notes } from "../stickyNotes/StickyNotes.stories";
+import teamCharter from "../../../public/team-charter.json";
 
 const meta: Meta<typeof StickyNotesBoard> = {
   component: StickyNotesBoard,
@@ -12,8 +12,17 @@ type Story = StoryObj<typeof StickyNotesBoard>;
 
 export const Primary: Story = {
   args: {
-    spacing: 10,
-    title: "Things old Ben Kenobe said:",
-    ...Notes.args,
+    title: "Things old Ben Kenobe said",
+    notes: [
+      "In my experience, there is no such thing as luck.",
+      "You will never find a more wretched hive of scum and villainy.",
+      "That’s no moon. It's a space station.",
+    ],
+  },
+};
+
+export const TeamAgreement: Story = {
+  args: {
+    ...teamCharter.boards[0],
   },
 };

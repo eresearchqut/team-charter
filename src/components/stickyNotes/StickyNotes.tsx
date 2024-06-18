@@ -14,7 +14,7 @@ export const StickyNotes: FunctionComponent<StickyNotesProps> = ({
     <Wrap {...wrapProps}>
       {notes.map((stickyNote, index) => (
         <WrapItem key={index}>
-          <StickyNote {...stickyNote} />{" "}
+          <StickyNote {...stickyNote} />
         </WrapItem>
       ))}
     </Wrap>

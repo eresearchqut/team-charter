@@ -1,10 +1,5 @@
 import { FunctionComponent } from "react";
-import {
-  Center,
-  Square,
-  SquareProps,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Square, SquareProps, Text, useColorModeValue } from "@chakra-ui/react";
 
 export interface StickyNoteProps
   extends Pick<
@@ -31,7 +26,7 @@ export const StickyNote: FunctionComponent<StickyNoteProps> = (
 
   return (
     <Square {...boxProps}>
-      <Center>{message}</Center>
+      <Text flex={1}>{message}</Text>
     </Square>
   );
 };
