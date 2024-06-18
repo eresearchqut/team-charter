@@ -5,6 +5,7 @@
 TODO
 
 ## Stack
+
 - [Next.js 13](https://nextjs.org/blog/next-13)
 - [Chakra UI](https://chakra-ui.com/)
 - [Jest](https://jestjs.io/) - Test runner
@@ -40,4 +41,3 @@ The unit tests for the components can be found in the `__tests__` directory.
 ### Storybook's Accessibility testing
 
 This starter kit comes with the `@storybook/addon-a11y` which is used to check for common accessibility errors in your components. When you run `yarn run storybook`, each story will show detailed explanations with suggested fixes if errors are found.
-
