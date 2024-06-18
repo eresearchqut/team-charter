@@ -21,16 +21,16 @@ export const StickyNote: FunctionComponent<StickyNoteProps> = (
   const { message, color = "yellow", ...boxOverrides } = args;
   const bg = useColorModeValue(`${color}.200`, `${color}.700`);
   const boxProps = { ...boxDefaults, bg, ...boxOverrides };
-  const stickNotRef = useRef<HTMLDivElement>(null);
+  const stickyNoteRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (stickNotRef.current) {
-      textFit(stickNotRef.current);
+    if (stickyNoteRef.current) {
+      textFit(stickyNoteRef.current);
     }
-  }, [stickNotRef]);
+  }, [stickyNoteRef]);
 
   return (
-    <Square ref={stickNotRef} {...boxProps}>
+    <Square ref={stickyNoteRef} {...boxProps}>
       {message}
     </Square>
   );
