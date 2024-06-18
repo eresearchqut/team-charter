@@ -1,0 +1,24 @@
+import type { Meta, StoryObj } from "@storybook/react";
+
+import { StickyNotesBoardCarousel } from "./StickyNotesBoardCarousel";
+import {
+  BenKenobe,
+  DarthVader,
+} from "../stickyNotesBoard/StickyNotesBoard.stories";
+import { StickyNotesBoardProps } from "../stickyNotesBoard";
+
+const meta: Meta<typeof StickyNotesBoardCarousel> = {
+  component: StickyNotesBoardCarousel,
+};
+
+export default meta;
+type Story = StoryObj<typeof StickyNotesBoardCarousel>;
+
+export const StarWarsQuotes: Story = {
+  args: {
+    boards: [
+      BenKenobe.args as StickyNotesBoardProps,
+      DarthVader.args as StickyNotesBoardProps,
+    ],
+  },
+};
