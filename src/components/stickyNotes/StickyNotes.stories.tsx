@@ -23,7 +23,7 @@ export const Primary: Story = {
           "You will never find a more wretched hive of scum and villainy.",
         fontSize: "large",
         transform: "rotate(5deg)",
-        bg: "blue.200",
+        color: "blue",
       },
       {
         message: "That’s no moon. It's a space station.",
