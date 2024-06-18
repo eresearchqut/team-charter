@@ -7,7 +7,7 @@
     "branches": [
       "main"
     ],
-    "repositoryUrl": "https://https://github.com/eresearchqut/team-charter.git",
+    "repositoryUrl": "https://github.com/eresearchqut/team-charter.git",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
