@@ -1,8 +1,26 @@
 {
-  "name": "team-charter",
+  "name": "@eresearch/team-charter",
   "description": "eResearch Team Charter",
   "version": "0.1.0",
   "private": true,
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "repositoryUrl": "https://https://github.com/eresearchqut/team-charter.git",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
   "keywords": [
     "next",
     "chakra-ui",
@@ -34,6 +52,11 @@
   "devDependencies": {
     "@babel/core": "7.24.7",
     "@chakra-ui/storybook-addon": "5.1.0",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.0.6",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.0",
     "@storybook/addon-a11y": "8.1.10",
     "@storybook/addon-actions": "8.1.10",
     "@storybook/addon-essentials": "8.1.10",
