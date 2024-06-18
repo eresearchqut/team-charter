@@ -12,7 +12,7 @@ export interface StickyNoteProps
 const boxDefaults = {
   size: "10em",
   padding: "1em",
-  boxShadow: "dark-lg",
+  boxShadow: "lg",
 };
 
 export const StickyNote: FunctionComponent<StickyNoteProps> = (
