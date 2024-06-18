@@ -3,7 +3,7 @@ name: Create and publish a Docker image
 on:
   workflow_run:
     workflows:
-      - build
+      - release
     branches:
       - main
     types:
