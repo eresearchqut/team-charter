@@ -18,7 +18,7 @@ export const StickyNotesBoard: FunctionComponent<StickyNotesBoardProps> = ({
   };
 
   const size =
-    notes.length > 10
+    notes.length > 8
       ? ["5em", "10em", "15em", "20em"]
       : notes.length > 2
         ? ["10em", "20em", "30em"]
