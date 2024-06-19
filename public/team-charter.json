@@ -1,5 +1,29 @@
 {
+  "interval": 5000,
   "boards": [
+    {
+      "title": "Team Purpose",
+      "notes": [
+        "Empower researchers through technology, training, and support."
+      ]
+    },
+    {
+      "title": "Team Guiding Principals",
+      "notes": [
+        "Values we share, about how we work with each other",
+        "Be Inquisitive: We  support each other to question the 'norm'",
+        "Be Brave: We support each other to think differently and speak up about what is challenging us",
+        "Be Innovative: be safe to fail, and innovate in the face of barriers",
+        "Be Friendly: We nurture the team's social and personal connections, rejoicing diversity and maintaining our humor",
+        "Be collaborative: We will work together as a team, share knowledge, and support each other to achieve our goals.",
+        "Be Empowered: Self starters who are inspired to do something when you can,  solving the problem, not the symptoms",
+        "Invest in ourselves: Continue to learn, grow and share, and solve a problem if you can when you find it",
+        "Be accountable:  We will take responsibility for our work, be transparent in our communication, and strive to deliver on our commitments.",
+        "Continuous Improvement: We will seek out opportunities to learn and improve our skills, processes, and tools",
+        "Quality: We will prioritise delivering quality services, leveraging the best of Technology, People and Processes",
+        "Provide fair, efficient and equitable access to Research resources"
+      ]
+    },
     {
       "title": "Team Agreement",
       "notes": [
@@ -13,6 +37,16 @@
         "Learn from mistakes made",
         "Trust each other",
         "Celebrate the small wins"
+      ]
+    },
+    {
+      "title": "Team Objectvies",
+      "notes": [
+        "Software Development",
+        "Support & Engagement",
+        "Platform (DevOps / SysOps)",
+        "Delivery",
+        "Bioinformatics"
       ]
     }
   ]
