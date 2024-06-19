@@ -22,3 +22,10 @@ export const StarWarsQuotes: Story = {
     ],
   },
 };
+
+export const WithInterval: Story = {
+  args: {
+    ...StarWarsQuotes.args,
+    interval: 5000,
+  },
+};
