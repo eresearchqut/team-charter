@@ -9,6 +9,13 @@ const meta: Meta<typeof StickyNotesBoard> = {
 export default meta;
 type Story = StoryObj<typeof StickyNotesBoard>;
 
+export const HanSolo: Story = {
+  args: {
+    title: "Things Han Solo said",
+    notes: ["Never tell me the odds."],
+  },
+};
+
 export const BenKenobe: Story = {
   args: {
     title: "Things Ben Kenobe said",

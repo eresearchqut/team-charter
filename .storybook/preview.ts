@@ -1,6 +1,13 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
+import "@fontsource/oxygen";
+
+import "@fontsource-variable/asap";
 
 const overrides = {
+  fonts: {
+    heading: `'Oxygen', sans-serif`,
+    body: `'Asap', sans-serif`,
+  },
   colors: {
     avatar: {
       "500": "#0066B9",

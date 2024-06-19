@@ -4,6 +4,7 @@ import { StickyNotesBoardCarousel } from "./StickyNotesBoardCarousel";
 import {
   BenKenobe,
   DarthVader,
+  HanSolo,
 } from "../stickyNotesBoard/StickyNotesBoard.stories";
 import { StickyNotesBoardProps } from "../stickyNotesBoard";
 
@@ -17,6 +18,7 @@ type Story = StoryObj<typeof StickyNotesBoardCarousel>;
 export const StarWarsQuotes: Story = {
   args: {
     boards: [
+      HanSolo.args as StickyNotesBoardProps,
       BenKenobe.args as StickyNotesBoardProps,
       DarthVader.args as StickyNotesBoardProps,
     ],

@@ -2350,6 +2350,16 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.2.tgz#d8bae93ac8b815b2bd7a98078cf91e2724ef11e5"
   integrity sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==
 
+"@fontsource-variable/asap@^5.0.21":
+  version "5.0.21"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/asap/-/asap-5.0.21.tgz#e12d097f5ed89e7599817ad6122fc608dcb8bbbc"
+  integrity sha512-KV/cBcwghZbuMp+jD6GOLu4HJoVa/pfLBgEqNdYAhUowwzP55t/EoU1EStQozEHXmVnN0BA3x/20DZXK6HIv2Q==
+
+"@fontsource/oxygen@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/oxygen/-/oxygen-5.0.13.tgz#14e1e1222ba1470ea8fbaec0c0965dff62d4935f"
+  integrity sha512-NZvN2/o5hTJcWFFu309mXORC4FO6WBxZVrvb2IkQXxKD3PyIFmCg0fUgCoeU3gmMasScJmqrsAL8BtpLFRbdTA==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.14.tgz#d78e481a039f7566ecc9660b4ea7fe6b1fec442b"

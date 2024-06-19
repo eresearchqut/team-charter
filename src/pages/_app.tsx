@@ -1,5 +1,7 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import "@fontsource/oxygen";
+import "@fontsource-variable/asap";
 
 // you can extend the theme and add custom colors, font styles, etc.
 const colors = {
@@ -23,7 +25,12 @@ const breakpoints = {
   xl: "1200px",
 };
 
-export const theme = extendTheme({ colors, fontWeights, breakpoints });
+const fonts = {
+  heading: `'Oxygen', sans-serif`,
+  body: `'Asap', sans-serif`,
+};
+
+export const theme = extendTheme({ fonts, colors, fontWeights, breakpoints });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

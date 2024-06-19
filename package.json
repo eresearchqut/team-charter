@@ -43,12 +43,14 @@
     "@chakra-ui/react": "2.8.2",
     "@emotion/react": "11.11.4",
     "@emotion/styled": "11.11.5",
+    "@fontsource-variable/asap": "^5.0.21",
+    "@fontsource/oxygen": "^5.0.13",
     "framer-motion": "10.18.0",
     "next": "14.2.4",
     "react": "18.2.0",
-    "textfit": "^2.4.0",
     "react-dom": "18.2.0",
-    "storybook": "8.1.9"
+    "storybook": "8.1.9",
+    "textfit": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.24.7",

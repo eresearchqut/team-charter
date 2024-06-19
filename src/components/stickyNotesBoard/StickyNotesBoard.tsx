@@ -17,12 +17,19 @@ export const StickyNotesBoard: FunctionComponent<StickyNotesBoardProps> = ({
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
+  const size =
+    notes.length > 10
+      ? ["5em", "10em", "15em", "20em"]
+      : notes.length > 2
+        ? ["10em", "20em", "30em"]
+        : ["15em", "30em", "45em"];
+
   const stickyNotes: StickyNotesProps = {
     spacing,
     notes: notes.map((note) => ({
       message: note,
       transform: `rotate(${randomIntFromInterval(-3, 3)}deg)`,
-      size: `${randomIntFromInterval(8, 12)}em`,
+      size,
     })),
   };
 

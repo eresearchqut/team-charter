@@ -1,18 +1,19 @@
-import { FunctionComponent, useRef, useEffect } from "react";
-import { Square, SquareProps, useColorModeValue } from "@chakra-ui/react";
+import { FunctionComponent, useEffect, useRef } from "react";
+import { Box, Square, SquareProps, useColorModeValue } from "@chakra-ui/react";
 import textFit from "textfit";
+
 export interface StickyNoteProps
   extends Pick<
     SquareProps,
-    "boxShadow" | "padding" | "size" | "color" | "transform"
+    "boxShadow" | "padding" | "color" | "transform" | "size"
   > {
   message: string;
 }
 
 const boxDefaults = {
-  size: "10em",
   padding: "1em",
-  boxShadow: "lg",
+  boxShadow: "dark-lg",
+  size: "10em",
 };
 
 export const StickyNote: FunctionComponent<StickyNoteProps> = (
@@ -21,17 +22,24 @@ export const StickyNote: FunctionComponent<StickyNoteProps> = (
   const { message, color = "yellow", ...boxOverrides } = args;
   const bg = useColorModeValue(`${color}.200`, `${color}.700`);
   const boxProps = { ...boxDefaults, bg, ...boxOverrides };
-  const stickyNoteRef = useRef<HTMLDivElement>(null);
+
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (stickyNoteRef.current) {
-      textFit(stickyNoteRef.current);
+    if (ref.current) {
+      textFit(ref.current, {
+        alignVert: true,
+        alignHoriz: true,
+        multiLine: true,
+      });
     }
-  }, [stickyNoteRef]);
+  }, [ref]);
 
   return (
-    <Square ref={stickyNoteRef} {...boxProps}>
-      {message}
+    <Square {...boxProps}>
+      <Box width={"100%"} height={"100%"} ref={ref}>
+        {message}
+      </Box>
     </Square>
   );
 };
