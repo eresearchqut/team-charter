@@ -2,7 +2,7 @@
 
 ## Overview
 
-TODO
+https://eresearchqut.github.io/team-charter/
 
 ## Stack
 
